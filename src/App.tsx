@@ -1,4 +1,4 @@
-import { useRef, useMemo, useState } from "react";
+import { useRef, useState } from "react";
 import { BsEmojiSmile, BsTwitter } from "react-icons/bs";
 import "./styles/home.scss";
 import { menuItems } from "./utils/menuBar";
