@@ -1,11 +1,17 @@
 import { useRef, useMemo, useState } from "react";
-import { BsTwitter } from "react-icons/bs";
+import { BsEmojiSmile, BsTwitter } from "react-icons/bs";
 import "./styles/home.scss";
 import { menuItems } from "./utils/menuBar";
 import { IoIosMore } from "react-icons/io";
 import { BiSearch } from "react-icons/bi";
-import { MdCancel } from "react-icons/md";
+import { MdCancel, MdGif } from "react-icons/md";
 import { whatsHappening } from "./utils/whatsHappening";
+import { posts } from "./utils/posts";
+import { HiOutlineSparkles } from "react-icons/hi";
+import { RiImage2Line } from "react-icons/ri";
+import { CgOptions } from "react-icons/cg";
+import { TbCalendarTime } from "react-icons/tb";
+import { GoLocation } from "react-icons/go";
 
 function App() {
   const inputRef = useRef<HTMLDivElement>(null);
@@ -46,7 +52,38 @@ function App() {
           <IoIosMore size={30} color="#e7e9ea" />
         </div>
       </aside>
-      <main className="col-lg-5 pt-3"></main>
+      <main className="col-lg-5 pt-3 mainPage">
+        <div className="homeHeader px-2 pt-1 pb-4 d-flex align-items-center justify-content-between">
+          <span className="title">Página Inicial</span>
+          <HiOutlineSparkles size={25} color="#fff" />
+        </div>
+        <div className="createTweet">
+          <div className="px-2">
+            <div className="top d-flex align-items-start pb-4">
+              <img src="profileImg.jpg" width={60} height={60} />
+              <div className="px-2 w-100 d-flex flex-column align-items-start">
+                <input type="text" placeholder="O que está acontecendo?" />
+                <div className="action d-flex align-items-center justify-content-between w-100">
+                  <div className="icons gap-3 d-flex align-items-center">
+                    <RiImage2Line color="#1d9bf0" size={25} />
+                    <div className="gif d-flex align-items-center justify-content-center">
+                      <MdGif color="#1d9bf0" size={25} />
+                    </div>
+                    <CgOptions color="#1d9bf0" size={25} />
+                    <BsEmojiSmile color="#1d9bf0" size={25} />
+                    <TbCalendarTime color="#1d9bf0" size={25} />
+                    <GoLocation color="#1d9bf0" size={25} />
+                  </div>
+                  <button className="tweetButton">Tweetar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {posts.map((post, idx) => (
+          <div className="post">a</div>
+        ))}
+      </main>
       <aside className="col-lg-4 rightAside pt-3 d-flex flex-column align-items-center">
         <div ref={inputRef} className="searchInput d-flex align-items-center">
           <BiSearch size={30} color={searchColor} />
