@@ -1,0 +1,137 @@
+$borderColor: #2f3336;
+$blueColor: #1d9bf0;
+$grayColor: #71767b;
+$secondaryColor: #1c1e23;
+
+.leftAside,
+.rightAside {
+  height: 100vh !important;
+}
+.leftAside {
+  border-right: $borderColor 1px solid;
+
+  .twitterIcon {
+    width: 50px;
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  .selectedMenu {
+    span {
+      font-weight: 700;
+    }
+  }
+  .menuIcons {
+    padding: 12px;
+    width: 95%;
+
+    span {
+      margin: 0 16px 0 20px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+  .tweetButton {
+    color: #fff;
+    background-color: $blueColor;
+    width: 280px;
+    height: 68px;
+    border-radius: 50px;
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .profileInfo {
+    padding: 12px;
+    font-size: 18px;
+    margin: 12px 15px 12px 5px;
+    img {
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+    }
+    .profileName {
+      font-weight: 700;
+    }
+    .profileUser {
+      color: $grayColor;
+    }
+  }
+}
+
+.rightAside {
+  border-left: $borderColor 1px solid;
+  padding-left: 40px !important;
+  row-gap: 20px;
+  .blueBorder {
+    border: 1px solid #1d9bf0;
+    background: transparent !important;
+  }
+  .searchInput {
+    background: $secondaryColor;
+    width: 100%;
+    height: 55px;
+    border-radius: 50px;
+    padding: 5px 20px;
+
+    input {
+      border: 0;
+      font-size: 18px;
+      background: transparent;
+      outline: none;
+      color: #e7e9ea;
+      padding: 12px;
+      width: 100%;
+      height: 100%;
+    }
+    .clearInput {
+      cursor: pointer;
+    }
+  }
+  .whatsHappening {
+    background: $secondaryColor;
+    width: 100%;
+    border-radius: 20px;
+    height: 75%;
+    padding: 10px 20px 20px;
+
+    .happeningTitle {
+      font-size: 26px;
+      font-weight: 700;
+    }
+    img {
+      border-radius: 15px;
+    }
+    .happeningInfo {
+      max-width: 55%;
+
+      .title {
+        font-size: 19px;
+        font-weight: 700;
+      }
+      .legend {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 16px;
+        color: $grayColor;
+      }
+    }
+
+    .showMore {
+      color: $blueColor;
+      font-size: 18px;
+    }
+  }
+  .legends {
+    max-width: 80%;
+    color: $grayColor;
+    font-size: 16px;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    align-self: flex-start;
+  }
+}

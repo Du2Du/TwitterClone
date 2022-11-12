@@ -1,0 +1,27 @@
+$background: #000;
+$color: #e7e9ea;
+
+@font-face {
+  font-family: "TwitterChirp";
+  src: local("TwitterChirp"), url(../fonts/twitterchirp.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: "TwitterChirp", "Roboto" !important;
+  min-width: 100%;
+  background-color: $background !important;
+  color: $color !important;
+}
+
+img {
+  object-fit: cover;
+}
