@@ -52,16 +52,16 @@ function App() {
           <IoIosMore size={30} color="#e7e9ea" />
         </div>
       </aside>
-      <main className="col-lg-5 pt-3 mainPage">
-        <div className="homeHeader px-2 pt-1 pb-4 d-flex align-items-center justify-content-between">
+      <main className="col-lg-5 px-0 pt-3 mainPage">
+        <div className="homeHeader px-4 pt-1 pb-4 d-flex align-items-center justify-content-between">
           <span className="title">Página Inicial</span>
           <HiOutlineSparkles size={25} color="#fff" />
         </div>
-        <div className="createTweet">
-          <div className="px-2">
-            <div className="top d-flex align-items-start pb-4">
+        <div className="createTweet px-3">
+          <div className="px-2 pr-0">
+            <div className="top d-flex align-items-start">
               <img src="profileImg.jpg" width={60} height={60} />
-              <div className="px-2 w-100 d-flex flex-column align-items-start">
+              <div className="pl-2 w-100 d-flex flex-column align-items-start">
                 <input type="text" placeholder="O que está acontecendo?" />
                 <div className="action d-flex align-items-center justify-content-between w-100">
                   <div className="icons gap-3 d-flex align-items-center">

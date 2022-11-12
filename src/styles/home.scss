@@ -138,17 +138,18 @@ $secondaryColor: #1c1e23;
 .mainPage {
   .homeHeader {
     .title {
-      font-size: 26px;
+      font-size: 25px;
       font-weight: 700;
     }
   }
   .createTweet {
+    border-bottom: 1px solid $borderColor;
     .top {
       img {
         border-radius: 50%;
       }
       .action {
-        padding: 12px;
+        padding: 12px 0 12px 12px;
         .tweetButton {
           color: #fff;
           background-color: $blueColor;
