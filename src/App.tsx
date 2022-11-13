@@ -43,7 +43,7 @@ function App() {
         <button className="tweetButton">Tweetar</button>
         <div className="profileInfo w-100 d-flex justify-content-between align-items-center">
           <div className="d-flex gap-2">
-            <img src="profileImg.jpg" />
+            <img src="profileImg.jpg" alt="Foto de Perfil" />
             <div className="profileNames d-flex flex-column align-items-center">
               <span className="profileName">Kajuuro</span>
               <span className="profileUser">@kajuuro</span>
@@ -60,7 +60,12 @@ function App() {
         <div className="createTweet px-3">
           <div className="px-2 pr-0">
             <div className="top d-flex align-items-start">
-              <img src="profileImg.jpg" width={60} height={60} />
+              <img
+                src="profileImg.jpg"
+                alt="Foto de Perfil"
+                width={60}
+                height={60}
+              />
               <div className="pl-2 w-100 d-flex flex-column align-items-start">
                 <input type="text" placeholder="O que está acontecendo?" />
                 <div className="action d-flex align-items-center justify-content-between w-100">
