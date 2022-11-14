@@ -25,10 +25,11 @@ function App() {
   };
 
   return (
-    <div className="row w-100 px-5">
-      <aside className="col-lg-3 d-flex flex-column align-items-start pt-3 leftAside">
+    <div className="d-flex w-100 px-4">
+      <aside className="leftAside"></aside>
+      <aside className="d-flex fixed px-4 flex-column align-items-start pt-3 leftAside">
         <div className="twitterIcon">
-          <BsTwitter size={40} color="#D6D9DB" />
+          <BsTwitter size={30} color="#D6D9DB" />
         </div>
         {menuItems.map((item, idx) => (
           <div
@@ -41,21 +42,21 @@ function App() {
           </div>
         ))}
         <button className="tweetButton">Tweetar</button>
-        <div className="profileInfo w-100 d-flex justify-content-between align-items-center">
+        <div className="profileInfo d-flex justify-content-between align-items-center">
           <div className="d-flex gap-2">
             <img src="profileImg.jpg" alt="Foto de Perfil" />
-            <div className="profileNames d-flex flex-column align-items-center">
+            <div className="profileNames d-flex flex-column align-items-start">
               <span className="profileName">Kajuuro</span>
               <span className="profileUser">@kajuuro</span>
             </div>
           </div>
-          <IoIosMore size={30} color="#e7e9ea" />
+          <IoIosMore size={20} color="#e7e9ea" />
         </div>
       </aside>
-      <main className="col-lg-5 px-0 pt-3 mainPage">
+      <main className="px-0 pt-3 mainPage">
         <div className="homeHeader px-4 pt-1 pb-4 d-flex align-items-center justify-content-between">
           <span className="title">Página Inicial</span>
-          <HiOutlineSparkles size={25} color="#fff" />
+          <HiOutlineSparkles size={20} color="#fff" />
         </div>
         <div className="createTweet px-3">
           <div className="px-2 pr-0">
@@ -63,21 +64,21 @@ function App() {
               <img
                 src="profileImg.jpg"
                 alt="Foto de Perfil"
-                width={60}
-                height={60}
+                width={50}
+                height={50}
               />
               <div className="pl-2 w-100 d-flex flex-column align-items-start">
                 <input type="text" placeholder="O que está acontecendo?" />
                 <div className="action d-flex align-items-center justify-content-between w-100">
                   <div className="icons gap-3 d-flex align-items-center">
-                    <RiImage2Line color="#1d9bf0" size={25} />
+                    <RiImage2Line color="#1d9bf0" size={20} />
                     <div className="gif d-flex align-items-center justify-content-center">
-                      <MdGif color="#1d9bf0" size={25} />
+                      <MdGif color="#1d9bf0" size={20} />
                     </div>
-                    <CgOptions color="#1d9bf0" size={25} />
-                    <BsEmojiSmile color="#1d9bf0" size={25} />
-                    <TbCalendarTime color="#1d9bf0" size={25} />
-                    <GoLocation color="#1d9bf0" size={25} />
+                    <CgOptions color="#1d9bf0" size={20} />
+                    <BsEmojiSmile color="#1d9bf0" size={20} />
+                    <TbCalendarTime color="#1d9bf0" size={20} />
+                    <GoLocation color="#1d9bf0" size={20} />
                   </div>
                   <button className="tweetButton">Tweetar</button>
                 </div>
@@ -85,11 +86,11 @@ function App() {
             </div>
           </div>
         </div>
-        {posts.map((post, idx) => (
+        {/* {posts.map((post, idx) => (
           <div className="post">a</div>
-        ))}
+        ))} */}
       </main>
-      <aside className="col-lg-4 rightAside pt-3 d-flex flex-column align-items-center">
+      <aside className="rightAside pt-3 d-flex flex-column align-items-center">
         <div ref={inputRef} className="searchInput d-flex align-items-center">
           <BiSearch size={30} color={searchColor} />
           <input

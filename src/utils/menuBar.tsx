@@ -12,35 +12,35 @@ import { CgMoreO } from "react-icons/cg";
 export const menuItems = [
   {
     name: "Página Inicial",
-    icon: <RiHome7Fill size={37} color="#e7e9ea" />,
+    icon: <RiHome7Fill size={30} color="#e7e9ea" />,
     selected: true,
   },
   {
     name: "Explorar",
-    icon: <BiHash size={37} color="#e7e9ea" />,
+    icon: <BiHash size={30} color="#e7e9ea" />,
   },
   {
     name: "Notificações",
-    icon: <RiNotification2Line size={37} color="#e7e9ea" />,
+    icon: <RiNotification2Line size={30} color="#e7e9ea" />,
   },
   {
     name: "Mensagens",
-    icon: <FaRegEnvelope size={37} color="#e7e9ea" />,
+    icon: <FaRegEnvelope size={30} color="#e7e9ea" />,
   },
   {
     name: "Itens Salvos",
-    icon: <BsBookmark size={37} color="#e7e9ea" />,
+    icon: <BsBookmark size={30} color="#e7e9ea" />,
   },
   {
     name: "Listas",
-    icon: <RiFileList2Line size={37} color="#e7e9ea" />,
+    icon: <RiFileList2Line size={30} color="#e7e9ea" />,
   },
   {
     name: "Perfil",
-    icon: <HiOutlineUser size={37} color="#e7e9ea" />,
+    icon: <HiOutlineUser size={30} color="#e7e9ea" />,
   },
   {
     name: "Mais",
-    icon: <CgMoreO size={37} color="#e7e9ea" />,
+    icon: <CgMoreO size={30} color="#e7e9ea" />,
   },
 ];

@@ -1,5 +1,6 @@
 $borderColor: #2f3336;
 $blueColor: #1d9bf0;
+$background: #000;
 $grayColor: #71767b;
 $secondaryColor: #1c1e23;
 
@@ -7,13 +8,20 @@ $secondaryColor: #1c1e23;
 .rightAside {
   height: 100vh !important;
 }
+
+.fixed {
+  position: fixed;
+  left: 0;
+}
 .leftAside {
+  background-color: $background;
+  width: 25%;
   border-right: $borderColor 1px solid;
 
   .twitterIcon {
     width: 50px;
     height: 50px;
-    padding: 0 12px;
+    padding: 0 12px 15px;
   }
 
   .selectedMenu {
@@ -22,33 +30,34 @@ $secondaryColor: #1c1e23;
     }
   }
   .menuIcons {
-    padding: 12px;
+    padding: 10px;
     width: 95%;
 
     span {
       margin: 0 16px 0 20px;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 24px;
     }
   }
   .tweetButton {
     color: #fff;
     background-color: $blueColor;
-    width: 280px;
-    height: 68px;
+    width: 83%;
+    min-height: 9%;
     border-radius: 50px;
     margin: 12px 0;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 20px;
   }
   .profileInfo {
     padding: 12px;
-    font-size: 18px;
+    font-size: 14px;
+    width: 90%;
     margin: 12px 15px 12px 5px;
     img {
-      height: 55px;
-      width: 55px;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
     }
     .profileName {
@@ -61,6 +70,7 @@ $secondaryColor: #1c1e23;
 }
 
 .rightAside {
+  width: 30%;
   border-left: $borderColor 1px solid;
   padding-left: 40px !important;
   row-gap: 20px;
@@ -136,9 +146,11 @@ $secondaryColor: #1c1e23;
   }
 }
 .mainPage {
+  width: 50% !important;
   .homeHeader {
+    width: 100%;
     .title {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 700;
     }
   }
@@ -150,29 +162,29 @@ $secondaryColor: #1c1e23;
       }
       .action {
         padding: 12px 0 12px 12px;
+        margin: 12px 0;
+
         .tweetButton {
           color: #fff;
           background-color: $blueColor;
-          width: 120px;
-          height: 45px;
+          width: 20%;
           border-radius: 50px;
-          margin: 12px 0;
-          font-size: 20px;
+          font-size: 15px;
           font-weight: 500;
           line-height: 20px;
         }
         .icons {
           .gif {
-            height: 20px;
+            height: 15px;
             border-radius: 3px;
-            width: 22px;
+            width: 17px;
             border: 1px solid $blueColor;
           }
         }
       }
       input {
         border: 0;
-        font-size: 24px;
+        font-size: 20px;
         background: transparent;
         outline: none;
         color: #e7e9ea;
