@@ -92,7 +92,7 @@ function App() {
       </main>
       <aside className="rightAside pt-3 d-flex flex-column align-items-center">
         <div ref={inputRef} className="searchInput d-flex align-items-center">
-          <BiSearch size={30} color={searchColor} />
+          <BiSearch size={25} color={searchColor} />
           <input
             value={inputValue}
             onChange={(ev) => setInputValue(ev.target.value)}

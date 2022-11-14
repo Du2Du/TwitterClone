@@ -72,7 +72,7 @@ $secondaryColor: #1c1e23;
 .rightAside {
   width: 30%;
   border-left: $borderColor 1px solid;
-  padding-left: 40px !important;
+  padding-left: 28px !important;
   row-gap: 20px;
   .blueBorder {
     border: 1px solid #1d9bf0;
@@ -87,7 +87,7 @@ $secondaryColor: #1c1e23;
 
     input {
       border: 0;
-      font-size: 18px;
+      font-size: 15px;
       background: transparent;
       outline: none;
       color: #e7e9ea;
@@ -107,7 +107,7 @@ $secondaryColor: #1c1e23;
     padding: 10px 20px 20px;
 
     .happeningTitle {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 700;
     }
     img {
@@ -117,27 +117,27 @@ $secondaryColor: #1c1e23;
       max-width: 55%;
 
       .title {
-        font-size: 19px;
+        font-size: 15px;
         font-weight: 700;
       }
       .legend {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        font-size: 16px;
+        font-size: 13px;
         color: $grayColor;
       }
     }
 
     .showMore {
       color: $blueColor;
-      font-size: 18px;
+      font-size: 15px;
     }
   }
   .legends {
     max-width: 80%;
     color: $grayColor;
-    font-size: 16px;
+    font-size: 13px;
     flex-wrap: wrap;
     column-gap: 15px;
     padding-left: 20px;
