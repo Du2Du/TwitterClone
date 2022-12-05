@@ -1,17 +1,13 @@
-import { RetweetPost } from "../Components/RetweetPost";
-
 export const posts = [
   {
-    profileName: "React",
-    profileUser: "@reactjs",
-    profileImg: (
-      <img src="1.png" alt="Foto de Profile" width={60} height={60} />
-    ),
-    title:
-      "A small detail, but one that folks using server-side rendering might appreciate. React 18 adds an onRecoverableError callback to hydrateRoot so you can get notified about hydration mismatches in production. Helps find regressions!",
-    likes: 208,
-    retweets: 35,
-    post: <RetweetPost />,
-    comments: 5,
+    profileName: "Chris Staudinger",
+    profileUser: "@ChrisStaud",
+    profileImg: "1.jpg",
+    description:
+      "Are you interested in any of these topics? 🔥👇\n💻 Programming\n🐍 Python\n🐙 Git\n☁️ DevOps & Cloud\n🏆 Certifications\n🔬 Data Science\n📊 SQL\n⚡️ JavaScript\n🤖 ML & AI\n💡 Resources & tools\nSharing my knowledge daily, follow me if you haven't already ✅",
+    likes: 972,
+    retweets: 129,
+    time: "4h",
+    comments: 42,
   },
 ];

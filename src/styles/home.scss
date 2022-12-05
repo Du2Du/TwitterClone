@@ -195,6 +195,39 @@ $secondaryColor: #1c1e23;
       }
     }
   }
+  .postsContainer {
+    height: 100% !important;
+    width: 100% !important;
+
+    .post {
+      padding: 10px 15px;
+      margin: 0;
+      width: 100% !important;
+      border-bottom: #71767b 1px solid;
+      border-top: #71767b 1px solid;
+      align-items: start;
+      .profilePicture {
+        img {
+          border-radius: 50%;
+        }
+      }
+      .tweet {
+        margin-left: 5px;
+        .info {
+          .profileName {
+            font-size: 18px;
+            font-weight: 700;
+          }
+          .profileUser,
+          .time {
+            margin: 0 5px;
+            color: $grayColor;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {

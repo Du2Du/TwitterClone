@@ -12,6 +12,7 @@ import { RiImage2Line } from "react-icons/ri";
 import { CgOptions } from "react-icons/cg";
 import { TbCalendarTime } from "react-icons/tb";
 import { GoLocation } from "react-icons/go";
+import { TweetPost } from "./Components/TweetPost";
 
 function App() {
   const inputRef = useRef<HTMLDivElement>(null);
@@ -86,9 +87,11 @@ function App() {
             </div>
           </div>
         </div>
-        {/* {posts.map((post, idx) => (
-          <div className="post">a</div>
-        ))} */}
+        <div className="postsContainer">
+          {posts.map((post, idx) => (
+            <TweetPost post={post} key={idx} />
+          ))}
+        </div>
       </main>
       <aside className="rightAside pt-3 d-flex flex-column align-items-center">
         <div ref={inputRef} className="searchInput d-flex align-items-center">
