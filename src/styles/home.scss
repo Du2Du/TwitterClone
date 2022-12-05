@@ -162,12 +162,13 @@ $secondaryColor: #1c1e23;
       }
       .action {
         padding: 12px 0 12px 12px;
-        margin: 12px 0;
+        height: 80px !important;
 
         .tweetButton {
           color: #fff;
           background-color: $blueColor;
-          width: 20%;
+          height: 70%;
+          width: 25%;
           border-radius: 50px;
           font-size: 15px;
           font-weight: 500;
@@ -193,5 +194,11 @@ $secondaryColor: #1c1e23;
         height: 100%;
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  html body div .rightAside {
+    display: none !important;
   }
 }
