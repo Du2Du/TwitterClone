@@ -212,17 +212,23 @@ $secondaryColor: #1c1e23;
         }
       }
       .tweet {
-        margin-left: 5px;
         .info {
+          display: flex;
+          align-items: center;
           .profileName {
             font-size: 18px;
             font-weight: 700;
           }
           .profileUser,
           .time {
-            margin: 0 5px;
             color: $grayColor;
             font-size: 17px;
+          }
+          .time {
+            margin: 0 5px;
+          }
+          .moreTweet {
+            justify-self: flex-end;
           }
         }
       }
